@@ -11,9 +11,9 @@
 <body>
     <div id="card">
         <header class="header">{{ title }}</header>
-        <div class="content">{{ content }}</div>
+        <div v-html="content" class="content"></div>
     </div>
-    
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
     <script src="js/index.js"></script>
 </body>
