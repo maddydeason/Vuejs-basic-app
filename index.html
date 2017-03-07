@@ -11,9 +11,20 @@
 <body>
     <div id="card">
         <header class="header">{{ title }}</header>
-        <div v-html="content" class="content"></div>
+        <div class="content">
+            <div>
+                <input id="itemForm" v-on:keypress.enter="addItem" />
+                <button v-on:click="addItem">Add book</button>
+            </div>
+            <ul>
+                <li v-for="(item, index) in items">
+                    <button v-on:click="deleteItem(index)">&times;</button>
+                    {{ item.text }}
+                </li>
+            </ul>
+        </div>
     </div>
-
+    
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
     <script src="js/index.js"></script>
 </body>
