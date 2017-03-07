@@ -1,3 +1,3 @@
-A basic app made with Vue.js
-View live at http://codepen.io/maddydeason/full/yMNroX/
+#A basic app made with Vue.js
+[View live here](http://codepen.io/maddydeason/full/yMNroX/)
  
